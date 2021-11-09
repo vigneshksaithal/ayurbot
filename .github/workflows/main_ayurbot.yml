@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          path: dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,4 +53,4 @@ jobs:
           app-name: 'ayurbot'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ED16EDD5CBB04C2B86AD4BA0DC235F5C }}
-          package: '/dist'
+          package: .
