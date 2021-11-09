@@ -1,13 +1,18 @@
 <script>
-  import logo from './assets/svelte.png';
-  import Counter from './lib/Counter.svelte';
 </script>
 
 <main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello world!</h1>
+  <h1>AyurBot</h1>
+  <p>
+    Chatbot to give ayurvedic health tips/ remedies for basic illness like
+    cough, cold.
+  </p>
 
-  <Counter />
+  <!-- svelte-ignore a11y-missing-attribute -->
+  <iframe
+    src="ZMWqE7DddTE.Hjl-ALzcw5yiitfr8uH_j6wMe2deLVTBu0xD5hPf_UY"
+    style="min-width: 400px; width: 100%; min-height: 500px;"
+  />
 </main>
 
 <style>
@@ -22,11 +27,6 @@
     margin: 0 auto;
   }
 
-  img {
-    height: 16rem;
-    width: 16rem;
-  }
-
   h1 {
     color: #ff3e00;
     text-transform: uppercase;
@@ -37,18 +37,8 @@
     max-width: 14rem;
   }
 
-  p {
-    max-width: 14rem;
-    margin: 1rem auto;
-    line-height: 1.35;
-  }
-
   @media (min-width: 480px) {
     h1 {
-      max-width: none;
-    }
-
-    p {
       max-width: none;
     }
   }
